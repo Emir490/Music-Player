@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FONOS - Hight Fidelity Music Player</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icons/logo.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" href="icons/88.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="black">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide song__image">
+            <img class="song__img" src="img/music-1.jpg" />
+          </div>
+          <div class="swiper-slide song__image">
+            <img class="song__img" src="img/music-2.jpg" />
+          </div>
+          <div class="swiper-slide song__image">
+            <img class="song__img" src="img/music-3.jpg" />
+          </div>
+          <div class="swiper-slide song__image">
+            <img class="song__img" src="img/music-4.jpg" />
+          </div>
+          <div class="swiper-slide song__image">
+            <img class="song__img" src="img/music-5.jpg" />
+          </div>
+          <div class="swiper-slide song__image">
+            <img class="song__img" src="img/music-6.jpg" />
+          </div>
+          <div class="swiper-slide song__image">
+            <img class="song__img" src="img/music-7.jpg" />
+          </div>
+          <div class="swiper-slide song__image">
+            <img class="song__img" src="img/music-8.jpg" />
+          </div>
+          <div class="swiper-slide song__image">
+            <img class="song__img" src="img/music-9.jpg" />
+          </div>
+          <div class="swiper-slide song__image">
+            <img class="song__img" src="img/music-10.jpg" />
+          </div>
+          <div class="swiper-slide song__image">
+            <img class="song__img" src="img/music-11.jpg" />
+          </div>
+          <div class="swiper-slide song__image">
+            <img class="song__img" src="img/music-12.jpg" />
+        </div>
+      </div>
+    </div>
+    <main class="main">
+        <div class="top-bar">
+            <span class="top-bar__text">En pausa</span>
+        </div>
+        <div class="song">
+            <div class="song__details">
+                <p class="song__name">Enemy</p>
+                <p class="song__artist">Imagine Dragons</p>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress__area">
+                <div class="progress__bar">
+                    <span></span>
+                </div>
+                <div class="timer">
+                    <p class="timer__current">0:00</p>
+                    <p class="timer__duration">2:54</p>
+                </div>
+            </div>
+            <audio src="songs/music-1.mp3" class="progress__audio"></audio>
+        </div>
+        <div class="controls">
+            <div class="controls__container">
+                <i class="material-icons controls__repeat next">repeat</i>
+                <i class="material-icons controls__prev">skip_previous</i>
+                <div class="controls__pause">
+                    <i class="material-icons pause__play">play_arrow</i>
+                </div>
+                <i class="material-icons controls__next">skip_next</i>
+                <i class="material-icons controls__shuffle">shuffle</i>
+            </div>
+            <div class="controls__show">
+                <i class="material-icons controls__more">expand_less</i>
+            </div>
+        </div>
+    </main>
+    <div class="music-list">
+        <div class="music-list__header">
+            <div class="music-list__row">
+                <i class="material-icons">queue_music</i>
+                <span class="music-list__title">Playlist</span>
+            </div>
+            <i id="close" class="material-icons">expand_more</i>
+        </div>
+        <ul class="musiclist"></ul>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/effect.js"></script>
+    <script src="js/music-list.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/appv.js"></script>
+</body>
+</html>
